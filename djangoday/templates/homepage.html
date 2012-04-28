@@ -4,32 +4,13 @@
 {% load boxes_tags %}
 {% load biblion_tags %}
 
-{% block tagline %}<h4>Three days of talks, two days of sprints, <br>one event you won't want to miss.</h4>{% endblock %}
+{% block tagline %}<h4>Una jornada única para aprender, mejorar, <br>y relacionarte con Django.</h4>{% endblock %}
 
 {% block body_class %}home{% endblock %}
 {% block body %}
-    {% comment %}
-    <section class="box first">
-        {% box "tickets" %}
-    </section>
-    <section class="box">
-        {% box "sponsors" %}
-    </section>
-    {% endcomment %}
-    <section class="homepage_blog">
-    <h1>Blog</h1>
-    {% comment %}
-        @@@ include snippet for the first post expanded
-        {% latest_blog_posts as posts %}
-        {% if posts %}
-            {% for post in posts %}
-                {% include "biblion/_blog_post_tease_snippet.html" %}
-            {% endfor %}
-        {% else %}
-            <p>No blog posts have been published.</p>
-        {% endif %}
-    {% endcomment %}
-</section>
+
+{% include "static/home.html" %}
+
 {% endblock %}
 
 {% block vignettes %}

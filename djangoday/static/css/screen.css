@@ -2811,37 +2811,7 @@ li {
   width: 100%;
   height: 100%;
 }
-#page_header .dateblock {
-  position: absolute;
-  top: 82px;
-  color: #2f3927;
-  text-shadow: #8eb96b 3px 3px 0, #8eb96b -3px -3px 0, #8eb96b -3px 3px 0, #8eb96b 3px -3px 0, #8eb96b 3px 0 0, #8eb96b -3px 0;
-}
-#page_header .dateblock h2 {
-  text-transform: uppercase;
-  color: #2f3927;
-  font-size: 1em;
-  margin-bottom: -10px;
-  letter-spacing: 1px;
-}
-#page_header .dateblock h2 .fakeliningnumerals {
-  font-size: 1.15em;
-}
-#page_header .dateblock h3 {
-  font-style: italic;
-  font-size: .9em;
-  margin: 0;
-  padding: 0;
-}
-#page_header .dateblock#tutorials_dateblock {
-  left: 320px;
-}
-#page_header .dateblock#talks_dateblock {
-  left: 510px;
-}
-#page_header .dateblock#sprints_dateblock {
-  right: 26px;
-}
+
 #page_header h4 {
   color: #e3edd7;
   font-size: 2em;
@@ -3277,7 +3247,7 @@ a.framed:hover {
 }
 
 .sponsors, .vignettes {
-  padding: 30px 0 20px;
+  padding: 10px 0 20px;
   line-height: 1.5em;
 }
 
@@ -3562,19 +3532,6 @@ a.framed:hover {
   padding-top: 0;
 }
 
-.homepage_blog {
-  border-top: 1px dotted #e3edd7;
-  float: left;
-  padding: 30px 0;
-}
-.homepage_blog > h1 {
-  text-transform: uppercase;
-  color: #2f3927;
-  text-shadow: rgba(227, 237, 215, 0.5) 0 1px 0;
-  font-size: 2em;
-  line-height: 1em;
-  margin-bottom: .6em;
-}
 .homepage_blog article.blog-post {
   clear: left;
   float: left;

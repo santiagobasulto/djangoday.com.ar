@@ -7,7 +7,7 @@ admin.autodiscover()
 
 from pinax.apps.account.openid_consumer import PinaxConsumer
 
-from djangocon_project.views import creole_preview
+from djangoday.views import creole_preview
 
 
 handler500 = "pinax.views.server_error"

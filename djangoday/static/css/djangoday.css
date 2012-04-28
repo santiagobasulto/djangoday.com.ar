@@ -1,0 +1,38 @@
+#logo-header{
+    width:450px;
+    margin:0 auto;
+}
+
+.dateblock {
+  position: relative;
+  top: 82px;
+  color: #2f3927;
+  text-shadow: #8eb96b 3px 3px 0, #8eb96b -3px -3px 0, #8eb96b -3px 3px 0, #8eb96b 3px -3px 0, #8eb96b 3px 0 0, #8eb96b -3px 0;
+}
+.dateblock h2 {
+  text-transform: uppercase;
+  color: #2f3927;
+  font-size: 1em;
+  margin-bottom: -10px;
+  letter-spacing: 1px;
+}
+.dateblock h2 .fakeliningnumerals {
+  font-size: 1.15em;
+}
+.dateblock h3 {
+  font-style: italic;
+  font-size: .9em;
+  margin: 0;
+  padding: 0;
+}
+.homepage_blog {
+  padding: 0px 0;
+}
+.homepage_blog > h1 {
+  text-transform: uppercase;
+  color: #2f3927;
+  text-shadow: rgba(227, 237, 215, 0.5) 0 1px 0;
+  font-size: 2em;
+  line-height: 1em;
+  margin-bottom: .6em;
+}
