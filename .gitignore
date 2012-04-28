@@ -1,0 +1,15 @@
+env/*
+local_settings.py
+*.pyc
+.project
+.pydevproject
+.idea/*
+dev.db
+*.*~
+*~
+public/tmp/uploads/*
+static/*
+public/js-build/*
+compass/.sass-cache/*
+public/tmp/tmp*
+public/css/*
