@@ -1,13 +1,11 @@
 from django.conf import settings
-from django.conf.urls.defaults import *
+from django.conf.urls.defaults import patterns, url, include
 from django.views.generic.simple import direct_to_template
 
 from django.contrib import admin
 admin.autodiscover()
 
 from pinax.apps.account.openid_consumer import PinaxConsumer
-
-from djangoday.views import creole_preview
 
 
 handler500 = "pinax.views.server_error"
@@ -26,27 +24,13 @@ urlpatterns = patterns("",
         "template": "mapa.html",
     }, name="mapa"),
 
-    url(r"^admin/invite_user/$", "pinax.apps.signup_codes.views.admin_invite_user", name="admin_invite_user"),
+    url(r"^admin/invite_user/$",
+        "pinax.apps.signup_codes.views.admin_invite_user",
+        name="admin_invite_user"),
     url(r"^admin/", include(admin.site.urls)),
     url(r"^about/", include("about.urls")),
-    
-    # url(r"^account/", include("pinax.apps.account.urls")),
-    # url(r"^openid/", include(PinaxConsumer().urls)),
-    # url(r"^boxes/", include("boxes.urls")),
-    # url(r"^speaker/", include("symposion.speakers.urls")),
-    # url(r"^proposal/", include("symposion.proposals.urls")),
-    # url(r"^review/", include("symposion.review.urls")),
-    # url(r"^schedule/", include("symposion.schedule.urls")),
-    # url(r"^creole_preview/$", creole_preview, name="creole_preview"),
 
-    # temp urls for static templates
-    url(r"^venue/$", direct_to_template, {
-        "template": "static/venue.html",
-    }, name="venue"),
-
-    url(r"^sprints/$", direct_to_template, {
-        "template": "static/sprints.html",
-    }, name="sprints"),
+    url(r"^account/", include("pinax.apps.account.urls")),
 )
 
 
