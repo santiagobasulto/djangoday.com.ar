@@ -1,0 +1,66 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+{% load boxes_tags %}
+{% load biblion_tags %}
+
+{% block body_class %}home{% endblock %}
+{% block body %}
+<header>
+    <h1>Log In</h1>
+</header>
+
+<p>
+    Don't have an account on this site? <a href="/account/signup/">Sign up</a>!
+</p>
+
+<form class="login uniForm" method="POST" action="/account/login/">
+    <div style="display:none">
+        <input type="hidden" name="csrfmiddlewaretoken" value="11aaf620ac71390fc2d439ee509a0c7b">
+    </div>
+    <fieldset class="inlineLabels">
+        <div class="form_block">
+            <a href="/account/password_reset/">Forgot password?</a>
+        </div>
+
+        <div id="div_id_username" class="ctrlHolder ">
+
+            <label for="id_username"> Username<span>*</span> </label>
+
+            <input id="id_username" type="text" class="textinput textInput" name="username" maxlength="30">
+
+        </div>
+
+        <div id="div_id_password" class="ctrlHolder ">
+
+            <label for="id_password"> Password<span>*</span> </label>
+
+            <input id="id_password" type="password" class="passwordinput" name="password">
+
+        </div>
+
+        <div id="div_id_remember" class="ctrlHolder checkbox ">
+
+            <input id="id_remember" type="checkbox" class="checkboxinput" name="remember">
+
+            <label for="id_remember"> Remember Me </label>
+
+            <p id="hint_id_remember" class="formHint">
+                If checked you will stay logged in for 3 weeks
+            </p>
+
+        </div>
+
+        <div class="form_block">
+            <button type="submit" value="Log in »">
+                Log in »
+            </button>
+        </div>
+    </fieldset>
+</form>
+
+<p>
+    If you have any trouble logging in to your account, contact us at <a href="mailto:djangocon@holdenweb.com">djangocon@holdenweb.com</a>.
+</p>
+
+{% endblock %}

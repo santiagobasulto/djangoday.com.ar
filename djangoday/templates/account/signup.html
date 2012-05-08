@@ -1,0 +1,131 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+{% load boxes_tags %}
+{% load biblion_tags %}
+
+{% block body_class %}home{% endblock %}
+{% block body %}
+            
+    
+    <header>
+        <h1>Sign Up</h1>
+    </header>
+
+    
+        <p>Already have an account? <a href="/account/login/">Log In</a>!</p>
+        
+        <form class="signup uniForm" id="signup_form" method="post" action="/account/signup/">
+            <div style="display:none"><input type="hidden" name="csrfmiddlewaretoken" value="11aaf620ac71390fc2d439ee509a0c7b"></div>
+            <fieldset class="inlineLabels">
+                
+
+
+    
+
+
+    <div id="div_id_username" class="ctrlHolder ">
+        
+
+        
+
+        
+            <label for="id_username">
+                Username<span>*</span>
+            </label>
+        
+
+        
+            <input id="id_username" type="text" class="textinput textInput" name="username" maxlength="30">
+        
+
+        
+    </div>
+
+
+    
+
+
+    <div id="div_id_password1" class="ctrlHolder ">
+        
+
+        
+
+        
+            <label for="id_password1">
+                Password<span>*</span>
+            </label>
+        
+
+        
+            <input id="id_password1" type="password" class="passwordinput" name="password1">
+        
+
+        
+    </div>
+
+
+    
+
+
+    <div id="div_id_password2" class="ctrlHolder ">
+        
+
+        
+
+        
+            <label for="id_password2">
+                Password (again)<span>*</span>
+            </label>
+        
+
+        
+            <input id="id_password2" type="password" class="passwordinput" name="password2">
+        
+
+        
+    </div>
+
+
+    
+
+
+    <div id="div_id_email" class="ctrlHolder ">
+        
+
+        
+
+        
+            <label for="id_email">
+                Email (optional)
+            </label>
+        
+
+        
+            <input id="id_email" type="text" class="textinput textInput" name="email">
+        
+
+        
+    </div>
+
+
+    
+
+
+    <input type="hidden" name="confirmation_key" id="id_confirmation_key">
+
+
+
+
+                
+                <div class="form_block">
+                    <input type="submit" value="Sign Up »">
+                </div>
+            </fieldset>
+        </form>
+        
+        
+        
+        <p>If you have any trouble creating your account, contact us at <a href="mailto:djangocon@holdenweb.com">djangocon@holdenweb.com</a>.</p>
+
+{% endblock %}

@@ -1,0 +1,69 @@
+#main_content > h2 {
+  text-transform: uppercase;
+  color: #2f3927;
+  position: relative;
+  top: 1.3em;
+  width: 160px;
+  clear: both;
+}
+#main_content > h3 {
+  text-transform: uppercase;
+  color: #48573c;
+  font-size: 0.8em;
+  position: relative;
+  margin-top: 1em;
+  top: 1.8em;
+  width: 160px;
+  clear: both;
+}
+#main_content input, #main_content textarea, #main_content select {
+  display: block;
+  display: inline;
+  float: left;
+  width: 436px;
+  margin-right: 24px;
+  margin-right: 0;
+}
+#main_content input[type=text], #main_content input[type=password], #main_content textarea {
+  width: 426px;
+  border: 1px solid #7a9465;
+  padding: 4px;
+  background-color: #e3edd7;
+  font-size: 1.125em;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#main_content input[type=text]:focus, #main_content input[type=password]:focus, #main_content textarea:focus {
+  background-color: white;
+  border-color: #ebed89;
+  outline: none;
+}
+#main_content .ctrlHolder {
+  overflow: hidden;
+  *zoom: 1;
+  margin-bottom: 20px;
+}
+#main_content .errorField {
+  color: #530306;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+#main_content .formHint {
+  display: inline;
+  float: left;
+  width: 436px;
+  margin-right: 24px;
+  padding-left: 184px;
+  margin-top: 10px;
+  line-height: 1.4em;
+}
+#main_content label {
+  text-transform: uppercase;
+  display: inline;
+  float: left;
+  width: 160px;
+  margin-right: 24px;
+  font-size: 0.8em;
+}

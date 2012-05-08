@@ -4,6 +4,7 @@
 {% load i18n %}
 
 {% block extra_head_base %}
+    <link href="{{ STATIC_URL }}css/site.css" rel="stylesheet" type="text/css" />
     <link href="{{ STATIC_URL }}css/screen.css" rel="stylesheet" type="text/css" />
     <link href="{{ STATIC_URL }}css/djangoday.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="http://use.typekit.com/hiw7etz.js"></script>
@@ -38,7 +39,9 @@
             {% include "_nav.html" %}
         </nav>
         <div class="container">
-            {% block tagline %}{% endblock %}
+            {% block tagline %}
+            <h4>Una jornada única para aprender, mejorar, <br>y relacionarte con <a href='https://www.djangoproject.com/'>Django</a>.</h4>
+            {% endblock %}
         </div>
     </header>
 
