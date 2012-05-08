@@ -157,7 +157,7 @@ INSTALLED_APPS = [
     "timezones",
     "emailconfirmation",
     "biblion",
-    "boxes",
+    #"boxes",
     "sorl.thumbnail",
     "metron",
     
