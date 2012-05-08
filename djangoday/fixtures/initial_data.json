@@ -3,8 +3,8 @@
         "pk": 1,
         "model": "sites.site",
         "fields": {
-            "domain": "djangocon.us",
-            "name": "DjangoCon US"
+            "domain": "djangoday.com.ar",
+            "name": "DjangoDay - La Plata - 2012"
         }
     }
 ]

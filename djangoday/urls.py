@@ -16,17 +16,22 @@ urlpatterns = patterns("",
         "template": "homepage.html",
     }, name="home"),
 
-    url(r"^info$", direct_to_template, {
+    url(r"^info/$", direct_to_template, {
         "template": "info.html",
     }, name="info"),
 
-    url(r"^mapa$", direct_to_template, {
+    url(r"^mapa/$", direct_to_template, {
         "template": "mapa.html",
     }, name="mapa"),
+
+    url(r"^organizadores/$", direct_to_template, {
+        "template": "organizadores.html",
+    }, name="organizadores"),
 
     url(r"^admin/invite_user/$",
         "pinax.apps.signup_codes.views.admin_invite_user",
         name="admin_invite_user"),
+
     url(r"^admin/", include(admin.site.urls)),
     url(r"^about/", include("about.urls")),
 
