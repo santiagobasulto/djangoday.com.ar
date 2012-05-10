@@ -2797,11 +2797,6 @@ li {
 #page_header .masthead_wrap {
   position: relative;
 }
-#page_header h1, #page_header h1 img {
-  float: left;
-  height: 179px;
-  width: 272px;
-}
 #page_header h1 span {
   position: absolute;
   text-indent: -9999px;

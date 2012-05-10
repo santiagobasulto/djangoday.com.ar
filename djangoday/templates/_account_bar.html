@@ -16,6 +16,6 @@
     {% endif %}
     <a href="{% if request.openid %}{% url openid-logout %}?next={% url acct_logout %}{% else %}{% url acct_logout %}{% endif %}">Logout</a>
 {% else %}
-    <a href="{% url acct_login %}">Log in</a> or <a href="{% url acct_signup %}">Sign Up</a>
+    <a href="{% url acct_login %}">Log in</a> or <a href="{% url acct_signup %}">Registro</a>
 {% endif %}
 </div>

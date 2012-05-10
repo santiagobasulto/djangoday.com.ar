@@ -19,19 +19,10 @@
 {% block body_base %}
     <header id="page_header">
         <div class="container">
+            <div class='logo-conteiner'>
+                <h1>DjangoDay - Argentina - La Plata - 2012</h1>
+            </div>
             <div id='logo-header'>
-                <div class='logo-conteiner'>
-                    <a href="/">
-                        <h1>
-                            <img src="{{ STATIC_URL }}img/logo.png" alt="DjangoDay - La Plata - 2012" />
-                            <span>DjangoDay Argentina 2012</span>
-                        </h1>
-                    </a>
-                </div>
-                <div class="dateblock" id="tutorials_dateblock">
-                    <h2><span class="fakeliningnumerals">16</span> Junio <span class="fakeliningnumerals">2012</span></h2>
-                    <h3>La Plata, Buenos Aires</h3>
-                </div>
             {% include "_account_bar.html" %}
             </div>
         </div>
