@@ -24,6 +24,14 @@ urlpatterns = patterns("",
         "template": "mapa.html",
     }, name="mapa"),
 
+    url(r"^sponsors/$", direct_to_template, {
+        "template": "sponsors.html",
+    }, name="sponsors"),
+
+    url(r"^agenda/$", direct_to_template, {
+        "template": "agenda.html",
+    }, name="agenda"),
+
     url(r"^organizadores/$", direct_to_template, {
         "template": "organizadores.html",
     }, name="organizadores"),
