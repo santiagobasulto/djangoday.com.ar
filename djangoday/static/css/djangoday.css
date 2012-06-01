@@ -36,3 +36,10 @@
   line-height: 1em;
   margin-bottom: .6em;
 }
+
+table.dday-table{
+    width:860px;
+    margin-left:40px;
+    margin-right:40px;
+}
+

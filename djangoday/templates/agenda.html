@@ -13,7 +13,89 @@
 <header>
     <h1>Agenda</h1>
 </header>
-<h2>Importante:</h2>
-<p>La lista definitiva de Charlas será publicada una vez que finalice la convocatoria.</p>
-
+<style>
+    .dday-table th{
+        text-align: center;
+    }
+    .dday-table th.small {
+        width:100px;
+    }
+    .dday-table th.medium {
+        width:200px;
+    }
+    .dday-table th.big {
+        width:560px;
+    }
+    .dday-table td {
+        text-align: center;
+    }
+</style>
+<table class='dday-table bordered-table zebra-striped' style='width:860px;left:0px;margin-left:40px; margin-right:40px;'>
+    <thead>
+    <tr>
+        <th class='small'>Comienzo</th>
+        <th class='small'>Fin</th>
+        <th class='big'>Título</th>
+        <th class='medium'>Speaker</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>8:30</td>
+        <td>9:00</td>
+        <td>Registración</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>9:00</td>
+        <td>9:45</td>
+        <td>Bienvenida + ¿por qué Django?</td>
+        <td>Organizadores</td>
+    </tr>
+    <tr>
+        <td>9:45</td>
+        <td>10:45</td>
+        <td>Introducción a Django</td>
+        <td>Juan Pedro Fisanotti</td>
+    </tr>
+    <tr>
+        <td>10:45</td>
+        <td>11:45</td>
+        <td>Testing en Django</td>
+        <td>Francisco Silvera</td>
+    </tr>
+    <tr>
+        <td>11:45</td>
+        <td>12:45</td>
+        <td>ORM + Forms</td>
+        <td>A confirmar</td>
+    </tr>
+    </tbody>
+</table>
+<br /><br />
+<h1> Espacios Divididos </h1>
+<p style='margin:0px;width:100%'>Después del almuerzo se divide el evento en dos grupos. Un grupo avanzado y un grupo avanzado</p>
+<br /><br />
+<table class='dday-table bordered-table zebra-striped' style='width:860px;left:0px;margin-left:40px; margin-right:40px;'>
+    <thead>
+    <tr>
+        <th style='width:430px'>Principiantes</th>
+        <th style='width:430px'>Avanzados</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Tutorial: Comenzando</td>
+        <td>Deployment</td>
+    </tr>
+    <tr>
+        <td>Tutorial: Comenzando</td>
+        <td>Deployment</td>
+    </tr>
+    <tr>
+        <td>Tutorial: Comenzando</td>
+        <td>Deployment</td>
+    </tr>
+    </tbody>
+</table>
 {% endblock %}
